@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            border: 5px solid black;
+            padding: 20px;
+            margin: 20px auto; /* Center the container and add margin for scroll space */
+        }
+
+        .logo {
+            height: 100px;
+            background-color: #6c8;
+            width: 23%;
+            float: left;
+            border: 2px solid black;
+        }
+
+        .top-bar, .footer {
+            background-color: #6c8;
+            height: 50px;
+            border: 2px solid black;
+        }
+
+        .search-bar {
+            background-color: white;
+            height: 50px;
+            border: 2px solid black;
+        }
+
+        .top-bar {
+            margin-left: 25%;
+        }
+        .boxL{
+            background-color: #6c8;
+            border: 2px solid black;
+            height: 50px;
+        }
+        .search-bar {
+            margin: 10px 0;
+            margin-left: 25%;
+            width: 40%;
+        }
+
+        .nav-links {
+            margin-left: 25%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-links div {
+            background-color: #6c8;
+            width: 15%;
+            text-align: center;
+            line-height: 50px;
+            margin-left: -33px;
+        }
+
+        .main-content {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .navigation {
+            width: 20%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ccc;
+            text-align: center;
+            border: 2px solid black;
+            padding-top: 20px;
+        }
+
+        .content {
+            width: 75%;
+            border: 2px solid black;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            margin-left: 5%;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <h2 style="text-align: center; padding-top: 25px;">LOGO</h2>
+    </div>
+    <div class="top-bar"></div>
+    <div class="search-bar"></div>
+    <div class="nav-links">
+        <div class="boxL"></div>
+        <div class="boxL"></div>
+        <div class="boxL"></div>
+        <div class="boxL"></div>
+        <div class="boxL"></div>
+    </div>
+
+    <div class="main-content">
+        <div class="navigation">Navigation</div>
+        <div class="content">Content</div>
+    </div>
+
+    <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>
